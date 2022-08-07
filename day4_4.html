@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:hover{
+            font-size: 20px;
+            color: #000;
+            text-decoration: none;
+        }
+        .container{
+            width: 400px;
+            height: 400px;
+            background-color: red;
+        }
+        .sub1{
+            width: 100px;
+            height: 100px;
+            background-color:aqua;
+        }
+        .sub2{
+            width: 100px;
+            height: 100px;
+            background-color:green;
+        }
+        .container:hover .sub1{
+            background-color: yellow;
+        }
+        .sub1:hover~.sub2{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">meo</a>
+    <div class="container">
+        <div class="sub1">
+
+        </div>
+        <div class="sub2"></div>
+    </div>
+</body>
+</html>

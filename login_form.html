@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: flex;
+            height: 100vh;
+        }
+        .left{
+            background: rgb(235, 235, 235);
+            width: 50%;
+            display: flex;
+            align-items: center;
+            
+        }
+        .right{
+            background: rgb(235, 235, 235);
+            width: 50%;
+        }
+        form{
+            background: #fff;
+            width: 400px;
+            height: 500px;
+            margin: 100px auto;
+            padding: 90px 40px;
+            text-align: center;
+            margin-bottom: 40px;
+            border-radius: 10px;
+            box-shadow:0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+        }
+        h1{
+            font-size: 24px;
+            font-family: 'Lora', serif;
+            margin-bottom: 20px;
+        }
+        input[type='email'], input[type='password']{
+            background: rgb(235, 235, 235);
+            width: 100%;
+            padding: 15px 10px;
+            border: none;
+            outline-color: #1877f2;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        .right a{
+            color: #1877f2;
+            text-decoration: none;
+        }
+ 
+        input[type='submit']{
+            background: #1877f2;
+            padding: 15px 125px;
+            border: none;
+            border-radius: 10px;
+            color: #fff;
+            text-transform: uppercase;
+            margin-top: 15px;
+            margin-bottom: 20px;
+            font-size: 20px;
+            font-family: 'Lora', serif;
+            font-weight: bold;
+        }
+        .line{
+            align-items: center;
+            border-bottom: 1px solid #dadde1;
+            display: flex;
+            margin: 20px 16px;
+            text-align: center;
+        }
+        button{
+            background: #42b72a;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            color: #fff;
+            text-transform: uppercase;
+            margin-top: 10px;
+            font-size: 15px;
+            font-family: 'Lora', serif;
+            font-weight: bold;
+        }
+        img{
+            height: 106px;
+            margin: -28px;
+            margin-bottom: 10px;
+        }
+        .contains{
+            margin-left: 40px;
+        }
+        .createpage{
+            color: #000;
+            font-size: 15px;
+            text-decoration: none;
+            text-align: center;
+            
+        }
+        .createpage a{
+            color: #000;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="contains">
+                <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook">
+                <h1>Facebook giúp bạn kết nối và chia sẻ với mọi người trong cuộc sống của bạn.</h1>
+            </div>
+        </div>
+        <div class="right">
+            <Form>
+                <input type="email" placeholder="Email"><br>
+                <input type="password" placeholder="Password"><br>
+                <input type="submit" value="Sign in"><br>
+                <a href="#">Forgot your password?</a><br>
+                <div class="line"></div>
+                <button>Creat new account</button>
+            </Form>
+            <div class="createpage">
+                <a href="#">Tạo trang</a>
+                 dành cho người nổi tiếng, thương hiệu hoặc doanh nghiệp.
+            </div>
+            
+            
+        </div>
+    </div>
+</body>
+</html>
