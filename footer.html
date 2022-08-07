@@ -19,18 +19,21 @@
       list-style: none;
       text-decoration: none;
     }
+    
+    .container{
+      margin-top: 100px;
+    }
 
     .row{
       display: flex;
       width: 90%;
       flex-wrap: wrap;
-      text-align: center;
+      text-align: left;
       margin: 0 auto;
     }
 
     .row .col{
       width: calc(100% / 6);
-      border: 1px solid black;
     }
 
     .row .col:nth-child(5){
@@ -51,7 +54,7 @@
 
     .footer-links p{
       color: #6F6C90;
-      margin-bottom: 15px;
+      margin-bottom: 30px;
     }
 
     .links ul li a{
@@ -75,7 +78,7 @@
 
     .subscribe{
      width: 90%;
-     margin: 0 auto;
+     margin-right: 100%;
     }
 
     input[type='email']{
@@ -85,7 +88,6 @@
       border-radius: 100px;
       border: 1px solid #D9DBE9;
       box-shadow: 0px 2px 12px rgba(20, 20, 43, 0.08);
-      margin-right: 100%;
     }
 
     input[type='submit']{
@@ -94,9 +96,42 @@
       background: #4A3AFF;
       color: #FFF;
       border: none;
-      margin-right: 100%;
+      transition: .5s
     }
 
+    input[type='submit']:hover{
+      background: #fff;
+      border: 1px solid #4A3AFF;
+      color: #4A3AFF;
+    }
+
+    .row2{
+      justify-content: space-between;
+      display: flex;
+      width: 90%;
+      margin: 150px auto;
+      border-top: 1px solid #EFF0F7;
+      padding: 40px;
+    }
+
+    
+    .copyright p{
+      color: #6F6C90;
+      line-height: 20px;
+      font-size: 16px;
+    }
+
+    .icons ul{
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+    .icons ul li a{
+      margin-left: 20px;
+    }
+    
+
+    
     @media screen and (max-width: 600px) {
       .row .col{
         width: 50%;
@@ -119,6 +154,11 @@
 </head>
 
 <body>
+  <header>
+    <div class="header">
+
+    </div>
+  </header>
   <footer>
     <div class="container">
       <div class="row">
@@ -188,8 +228,30 @@
               </div>
             </div>
       </div>
-      <div class="row">
-          row2
+    </div>
+    <div class="row2">
+        <div class="copyright">
+          <p>Copyright © 2022 BRIX Templates | All Rights Reserved</p>
+        </div>
+        <div class="icons">
+          <ul>
+            <li class="icon"><a href="#">
+              <i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li class="icon"><a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a></li>
+            <li class="icon"><a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a></li>
+            <li class="icon"><a href="#">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a></li>
+            <li class="icon"><a href="#">
+              <i class="fa-brands fa-youtube"></i>
+            </a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </footer>
