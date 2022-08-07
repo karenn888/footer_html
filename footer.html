@@ -112,6 +112,7 @@
       margin: 150px auto;
       border-top: 1px solid #EFF0F7;
       padding: 40px;
+      flex-wrap: wrap;
     }
     
     .copyright p{
@@ -129,8 +130,6 @@
       margin-left: 20px;
     }
     
-
-    
     @media screen and (max-width: 600px) {
       .row .col{
         width: 50%;
@@ -140,7 +139,19 @@
         width: 100%;
         margin-bottom: 20px;
       }
+      .row2{
+        display: block;
+      }
+      .row2 .icons ul{
+        width: 100%;
+        justify-content: center;
+      }
+      .row2 .icons ul li{
+        margin-top: 20px;
+        text-align: center;
+      }
     }
+
     @media screen and (max-width: 476px) {
       .row .col{
         width: 100%;
